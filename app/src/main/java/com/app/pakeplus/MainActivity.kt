@@ -60,6 +60,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         // webView.settings.userAgentString = ""
+        // 设置 WebView 使用 PC 版的 User-Agent
+        val pcUserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+        webView.settings.userAgentString = pcUserAgent
 
         webView.settings.loadWithOverviewMode = true
         webView.settings.setSupportZoom(false)
